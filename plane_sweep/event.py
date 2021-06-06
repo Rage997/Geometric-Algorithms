@@ -1,7 +1,15 @@
 class Event:
+    '''
+    Event struct. There are 3 kind of event:
+        1. right
+        2. left
+        3. intersection
+    An event may refer to a disk.
+    '''
     val = 0
     disk = None
-
+    kind = None
+    
 class PriorityQueue:
     '''All operations are in O(n)'''
     def __init__(self, events:[]):
